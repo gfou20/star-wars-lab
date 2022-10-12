@@ -12,23 +12,22 @@ const StarshipList = () => {
     }
     fetchStarshipList()
   }, [])
-  //only async for pulling api data since it has to wait 
   
   return (
     <>
-      <h3>Monster List (OMG SCARY)</h3>
+      <h3>Starship List </h3>
       {starshipList.length ? 
       <>
         {starshipList.map(starship => 
           <div key={starship.index}>
-            <Link to="/starships" state={{starship}}>{starship.name}</Link>
+            <Link to="/starship-list" state={{starship}}>{starship.name}</Link>
             <br/>
           </div>
         )}
       </>
       :
       <>
-        <h4>Loading scary monsters...</h4>
+        <h4>One sec...</h4>
       </>
       }
     </>

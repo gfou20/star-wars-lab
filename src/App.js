@@ -5,6 +5,7 @@ import StarshipList from './pages/StarshipList/StarshipList'
 function App() {
   return (
     <>
+      <h2>Hello Starships!</h2>
       <Routes>
         <Route path="/starship-list" element={<StarshipList />}/>
       </Routes>
