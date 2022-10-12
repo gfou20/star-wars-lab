@@ -9,6 +9,7 @@ const StarshipList = () => {
     const fetchStarshipList = async () => {
       const starshipData = await getStarshipList()
       setStarshipList(starshipData.results)
+      console.log(starshipData)
     }
     fetchStarshipList()
   }, [])
@@ -20,14 +21,14 @@ const StarshipList = () => {
       <>
         {starshipList.map(starship => 
           <div key={starship.index}>
-            <Link to="/starship-list" state={{starship}}>{starship.name}</Link>
+            <Link to="/starship" state={{starship}}>{starship.name}</Link>
             <br/>
           </div>
         )}
       </>
       :
       <>
-        <h4>One sec...</h4>
+        <h4>Hyperdrive in...</h4>
       </>
       }
     </>
