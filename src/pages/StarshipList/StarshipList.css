@@ -10,18 +10,19 @@ h3:hover {
 }
 
 .card-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
 }
 
 a {
-  border: 1px solid black;
   background-color: olivedrab;
   color: white;
-  display: flex;
+  padding: 10px;
+  text-align: center;
+  display:flex;
+  align-items: center;
   justify-content: center;
   width: 200px;
+  height: 50px;
   margin: 10px;
 }
 
