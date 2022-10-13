@@ -1,0 +1,16 @@
+h3 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: black;
+}
+
+h3:hover {
+  color:aqua
+}
+
+#card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

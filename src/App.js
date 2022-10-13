@@ -1,13 +1,16 @@
-import './App.css';
+import './App.css'
 import { Route, Routes } from 'react-router-dom'
+import NavBar from './components/NavBar/NavBar'
 import StarshipList from './pages/StarshipList/StarshipList'
+import StarshipPage from './pages/StarshipPage/StarshipPage'
 
 function App() {
   return (
     <>
-      <h2>Hello Starships!</h2>
+      <NavBar />
+      <StarshipList />
       <Routes>
-        <Route path="/starship-list" element={<StarshipList />}/>
+        
       </Routes>
     </>
   )
