@@ -19,21 +19,22 @@ const StarshipList = () => {
     <>
       <h3>Starship List </h3>
       {starshipList.length ? 
-      <>
-        {starshipList.map(starship => 
-          <div key={starship.index} id="card-container">
+      <div>
+        {starshipList.map((starship, idx) => 
+          <div key={idx} 
+          className="card-container">
             <Link to="/starship" state={{starship}}>{starship.name}</Link>
             <br/>
           </div>
         )}
-      </>
+      </div>
       :
       <>
-        <h4>Hyperdrive in...</h4>
+        <h4>Hyperdrive starting...</h4>
       </>
       }
     </>
   );
 }
 
-export default StarshipList;
+export default StarshipList

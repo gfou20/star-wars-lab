@@ -3,6 +3,7 @@ h1 {
   background-color: black;
   display: flex;
   justify-content: center;
+  margin-top: 0;
 }
 
 h1:hover {
