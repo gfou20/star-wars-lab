@@ -8,9 +8,9 @@ function App() {
   return (
     <>
       <NavBar />
-      <StarshipList />
       <Routes>
-        
+      <Route path="/" element={<StarshipList />} />
+        <Route path="/starship" element={<StarshipPage />} />
       </Routes>
     </>
   )
